@@ -1,0 +1,77 @@
+\documentclass{minutes}
+
+\title{Kick-Off Meeting}
+\author{John Doe}
+\wheremeeting{By the lake}
+\whenmeeting{31 March 2023}
+
+\initiator{John Doe}
+\participant[present]{John Doe}
+\participant[present]{Peter Was-Present}
+\participant[information]{Charles Knowing}
+\participant[absent]{Rachel Lost}
+
+\begin{document}
+\frontmatter
+
+\section*{Agenda}
+\ol{
+  \item Just some text
+  \item How To
+}
+
+\section{Just some text}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+\newpage
+
+\section{How To} \label{howTo}
+This \texttt{\textbackslash section} shows some elements to get comfortable. Use \textbackslash newpage to get forced page breaks.
+
+\subsection{Headings}
+Add headings with the \textbackslash section command, add an asterix to remove the numbering. Same applies for \textbackslash subsection, \textbackslash subsubsection and many more.
+
+\begin{verbatim}
+  \section{Heading with numbering}
+  \section*{Heading without numbering}
+\end{verbatim}
+
+
+\subsection{Lists}
+Use \textbackslash ul and \textbackslash ol for unordered and ordered lists.
+
+\begin{verbatim}
+  \ul{
+    /item Unordered list item 1
+    /item Unordered list item 2
+  }
+      
+  \ol{
+    /item Ordered list item 1
+    /item Ordered list item 2
+  }
+\end{verbatim}   
+
+\subsection{Table of Contents}
+
+If you like to add an automatically generated table of contents, you can do so with \textbackslash tableofcontents. The default title is \texttt{Contents} but you can change it as follows:
+      
+\begin{verbatim}
+  \tableofcontents
+
+  \renewcommand*\contentsname{My Table of Contents}
+\end{verbatim}
+
+\subsection{References}
+Go to section with label \texttt{howTo}: \pageref{howTo} \newline
+Go to \href{https://google.com}{Google}
+
+\newpage
+
+\task{Schedule another meeting}{John Doe}{Within 1 week}
+\task{Find back onto the road}{Rachel Lost}{ASAP}
+\tasklist
+
+\end{document}
