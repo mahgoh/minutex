@@ -1,6 +1,6 @@
 # minutex
 
-A Latex template for minutes documnets for FHNW student projects.
+A Latex template for minutes documents for FHNW student projects.
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ The Latex Workshop extension automatically (re-)generates the PDF file when the 
 
 ## VS Code Recommendations
 
-The extensions below are recommended when using VS Code and upon opening in VS Code, the user should be ask if they should be installed/enabled for this workspace.
+The extensions below are recommended when using VS Code. Upon opening VS Code, the user should be asked if they should be installed/enabled for the present workspace.
 
 * Latex Workshop
 * Grammarly
